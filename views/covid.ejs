@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#000000" />
+  <meta name="description"
+    content="Covid Help Resources like medicines, hospital beds and oxygen cylinders. Emergancy oxygen supply informations." />
+  <meta name="keywords"
+    content="Covid-19, Covid help, covid support , covid medical Emergancy, covid oxygen supply,
+    covid oxygen help, hospital beds , hostipal beds with oxygen , oxygen cylinders, plasma,  tisana, tisana tech, tisana tech solution, tisana tech solution pvt ltd">
+  <meta name="author" content="Akash Kumar Verma">
+
+  <!-- Bootstrap Min CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <title>Tisana Tech - Covid Care | Covid Help | Covid Support</title>
+</head>
+
+<body>
+  <div class="preloader-area" style="background-color: #13c4a1 !important">
+    <div class="spinner">
+        <div class="inner">
+            <div class="disc"></div>
+            <div class="disc"></div>
+            <div class="disc"></div>
+        </div>
+    </div>
+</div>
+  <!-- Start Navbar Area -->
+  <div class="navbar-area bg-white py-0">
+    <div class="strax-nav-header">
+      <div class="container">
+        <nav class="navbar navbar-expand-md navbar-light">
+          <a class="navbar-brand" href="index"><img src="img/logo.png" alt="logo" width="40%!important"></a>
+          <div class="collapse-navbar-collapse mean-menu" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="/" class="nav-link">
+                  Home
+                </a>
+              </li>
+
+         
+
+              <li class="nav-item">
+                <a href="/resource" class="nav-link">Add information </i></a>
+
+              </li>
+
+              <li class="nav-item">
+                <a href="/" class="nav-link">Be a volunteer</a>
+              </li>
+
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="mainwraper">
+    <section class="sectioncovid">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-8 offset-lg-2">
+            <div class="headverify text-center">
+              <h5><span class="text-red-800"></span> Covid Help Resources</h5>
+              <!-- <h6 class="text-sm font-light mb-2">A crowdsourced initiative</h6> -->
+              <p class="hidden md:block">
+                Please help us validate data by upvoting or downvoting information. If you find new, verified help
+                information, please add it using this <a target="_blank" href="#"
+                  class="text-blue-800 underline">link</a>. We will re-verify it before adding it to this portal.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-8 offset-lg-2">
+            <div class="formselct-covd row mt-5">
+              <div class="form-group col-6">
+                <label>Select State</label>
+                <select id="stateId" class="form-control">
+                  <option value="">Select State</option>
+                  <option value="Andaman & Nicobar">Andaman & Nicobar</option>
+                  <option value="Andhra Pradesh">Andhra Pradesh</option>
+                  <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                  <option value="Assam">Assam</option> 
+                  <option value = 'Bihar'>Bihar</option>
+                  <option value = 'Chandigarh'>Chandigarh</option>
+                  <option value = 'Chhattisgarh'>Chhattisgarh</option>
+                  <option value = 'Dadra & Nagar Haveli'>Dadra & Nagar Haveli</option>
+                  <option value = 'Daman & Diu'>Daman & Diu</option>
+                  <option value = 'Delhi'>Delhi</option>
+                  <option value = 'Goa'>Goa</option>
+                  <option value = 'Gujarat'>Gujarat</option>
+                  <option value = 'Haryana'>Haryana</option>
+                  <option value = 'Himachal Pradesh'>Himachal Pradesh</option>
+                  <option value = 'Jammu & Kashmir'>Jammu & Kashmir</option>
+                  <option value = 'Jharkhand'>Jharkhand</option>
+                  <option value = 'Karnataka'>Karnataka</option>
+                  <option value = 'Kerala'>Kerala</option>
+                  <option value = 'Lakshadweep'>Lakshadweep</option>
+                  <option value = 'Madhya Pradesh'>Madhya Pradesh</option>
+                  <option value = 'Maharashtra'>Maharashtra</option> 
+                  <option value = 'Manipur'>Manipur</option>
+                  <option value = 'Meghalaya'>Meghalaya</option>
+                  <option value = 'Mizoram'>Mizoram</option> 
+                  <option value = 'Nagaland'>Nagaland</option>
+                  <option value = 'Orissa'>Orissa</option>
+                  <option value = 'Pondicherry'>Pondicherry</option>
+                  <option value = 'Punjab'>Punjab</option> 
+                  <option  value = 'Rajasthan'>Rajasthan</option>
+                  <option value = 'Sikkim'>Sikkim</option>
+                  <option value = 'Tamil Nadu'>Tamil Nadu</option>
+                  <option value = 'Tripura'>Tripura</option>
+                  <option value = 'Uttar Pradesh'>Uttar Pradesh</option>
+                  <option value = 'Uttaranchal'>Uttaranchal</option>
+                  <option value = 'West Bengal'>West Bengal</option>
+                </select>
+              </div>
+              <div class="form-group col-6  ">
+                <div class="formselct-covd">
+                  <label>Select City</label>
+                  <select id = "selectCity" class="form-control">
+                    <option value="">Select city</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="viewcovid--box mt-4">
+              <div class="services-button">
+                <h5 class="text-center">Filter by</h5>
+                <ul class="servul-items">
+                  <li class="active"><a href="#">Oxygen</a></li>
+                  <li><a href="#">Hospital Beds</a></li>
+                  <li><a href="#">Remdesivir/Medicines</a></li>
+                </ul>
+              </div>
+              <div class="shotrb-list">
+                <!-- <ul class="nav nav-pills napill-covid justify-content-center mb-4">
+                    <li><a class="active" data-toggle="pill" href="#tab1">Verified At</a></li>
+                    <li><a data-toggle="pill" href="#tab2">Updated At</a></li>
+                    <li><a data-toggle="pill" href="#tab3">Votes</a></li>
+                  </ul> -->
+                <div class="tab-content">
+                  <div id="tab1" class="tab-pane active">
+                    <div class="verified--wrap">
+                      <div class="row" id="resource-list">
+
+                                            
+                        <!-- <div class="col-12 col-md-3">
+                          <div class="boxvied--grid">
+                            <div class="headercovied">
+                              <h3 class="title--name--covid">Ambedkar Nagar Hospital</h3>
+                              <div class="bottom-verif"><span class="verified-txt">Available</span><span
+                                  class="verified-hrs">Verified*2 2 hours ago</span></div>
+                            </div>
+                            <div class="middle-bodycovid">
+                              <ul class="addInf--call">
+                                <li class="addres-item"><span>City:</span>New Delhi</li>
+                                <li class="addres-item"><span>Phone:</span>+91 99815 75575</li>
+                              </ul>
+                              <div class="moreInfo--items">
+                                <h6>More Details</h6>
+                                <p>2 beds available @6:50 pm 25th April in ward 32, without O2. Call before going</p>
+                              </div>
+                              <div class="availberqui-hos">
+                                <p><span></span></p>
+                              </div>
+                            </div>
+                            <div class="footer--covid">
+                              <div class="d-flex align-item-center">
+                                <span class="help-title">Helpful?</span>
+                                <div class="likecov--icon d-flex align-item-center">
+                                  <span class="like-icon"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></span>
+                                  <span class="like--txt">0</span>
+                                  <span class="like-icon dislike-flip"><i class="fa fa-thumbs-o-down"
+                                      aria-hidden="true"></i></span>
+                                  <span class="like--txt">0</span>
+                                </div>
+                              </div>
+                              <div class="sharebtn"><span><a href="#"><i class="fa fa-share-alt mr-2"
+                                      aria-hidden="true"></i>Share</a></span></div>
+                            </div>
+                          </div>
+                        </div>
+
+                                              
+                        <div class="col-12 col-md-3">
+                          <div class="boxvied--grid">
+                            <div class="headercovied">
+                              <h3 class="title--name--covid">Ambedkar Nagar Hospital</h3>
+                              <div class="bottom-verif"><span class="verified-txt">Available</span><span
+                                  class="verified-hrs">Verified*2 2 hours ago</span></div>
+                            </div>
+                            <div class="middle-bodycovid">
+                              <ul class="addInf--call">
+                                <li class="addres-item"><span>City:</span>New Delhi</li>
+                                <li class="addres-item"><span>Phone:</span>+91 99815 75575</li>
+                              </ul>
+                              <div class="moreInfo--items">
+                                <h6>More Details</h6>
+                                <p>2 beds available @6:50 pm 25th April in ward 32, without O2. Call before going</p>
+                              </div>
+                              <div class="availberqui-hos">
+                                <p><span></span></p>
+                              </div>
+                            </div>
+                            <div class="footer--covid">
+                              <div class="d-flex align-item-center">
+                                <span class="help-title">Helpful?</span>
+                                <div class="likecov--icon d-flex align-item-center">
+                                  <span class="like-icon"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></span>
+                                  <span class="like--txt">0</span>
+                                  <span class="like-icon dislike-flip"><i class="fa fa-thumbs-o-down"
+                                      aria-hidden="true"></i></span>
+                                  <span class="like--txt">0</span>
+                                </div>
+                              </div>
+                              <div class="sharebtn"><span><a href="#"><i class="fa fa-share-alt mr-2"
+                                      aria-hidden="true"></i>Share</a></span></div>
+                            </div>
+                          </div>
+                        </div>
+
+
+                                              
+                        <div class="col-12 col-md-3">
+                          <div class="boxvied--grid">
+                            <div class="headercovied">
+                              <h3 class="title--name--covid">Ambedkar Nagar Hospital</h3>
+                              <div class="bottom-verif"><span class="verified-txt">Available</span><span
+                                  class="verified-hrs">Verified*2 2 hours ago</span></div>
+                            </div>
+                            <div class="middle-bodycovid">
+                              <ul class="addInf--call">
+                                <li class="addres-item"><span>City:</span>New Delhi</li>
+                                <li class="addres-item"><span>Phone:</span>+91 99815 75575</li>
+                              </ul>
+                              <div class="moreInfo--items">
+                                <h6>More Details</h6>
+                                <p>2 beds available @6:50 pm 25th April in ward 32, without O2. Call before going</p>
+                              </div>
+                              <div class="availberqui-hos">
+                                <p><span></span></p>
+                              </div>
+                            </div>
+                            <div class="footer--covid">
+                              <div class="d-flex align-item-center">
+                                <span class="help-title">Helpful?</span>
+                                <div class="likecov--icon d-flex align-item-center">
+                                  <span class="like-icon"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></span>
+                                  <span class="like--txt">0</span>
+                                  <span class="like-icon dislike-flip"><i class="fa fa-thumbs-o-down"
+                                      aria-hidden="true"></i></span>
+                                  <span class="like--txt">0</span>
+                                </div>
+                              </div>
+                              <div class="sharebtn"><span><a href="#"><i class="fa fa-share-alt mr-2"
+                                      aria-hidden="true"></i>Share</a></span></div>
+                            </div>
+                          </div>
+                        </div>
+
+
+                                              
+                        <div class="col-12 col-md-3">
+                          <div class="boxvied--grid">
+                            <div class="headercovied">
+                              <h3 class="title--name--covid">Ambedkar Nagar Hospital</h3>
+                              <div class="bottom-verif"><span class="verified-txt">Available</span><span
+                                  class="verified-hrs">Verified*2 2 hours ago</span></div>
+                            </div>
+                            <div class="middle-bodycovid">
+                              <ul class="addInf--call">
+                                <li class="addres-item"><span>City:</span>New Delhi</li>
+                                <li class="addres-item"><span>Phone:</span>+91 99815 75575</li>
+                              </ul>
+                              <div class="moreInfo--items">
+                                <h6>More Details</h6>
+                                <p>2 beds available @6:50 pm 25th April in ward 32, without O2. Call before going</p>
+                              </div>
+                              <div class="availberqui-hos">
+                                <p><span></span></p>
+                              </div>
+                            </div>
+                            <div class="footer--covid">
+                              <div class="d-flex align-item-center">
+                                <span class="help-title">Helpful?</span>
+                                <div class="likecov--icon d-flex align-item-center">
+                                  <span class="like-icon"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></span>
+                                  <span class="like--txt">0</span>
+                                  <span class="like-icon dislike-flip"><i class="fa fa-thumbs-o-down"
+                                      aria-hidden="true"></i></span>
+                                  <span class="like--txt">0</span>
+                                </div>
+                              </div>
+                              <div class="sharebtn"><span><a href="#"><i class="fa fa-share-alt mr-2"
+                                      aria-hidden="true"></i>Share</a></span></div>
+                            </div>
+                          </div>
+                        </div> -->
+
+
+
+                      </div>
+                    </div>
+                  </div>
+                  <div id="tab2" class="tab-pane fade in">
+                    <h3>Menu 1</h3>
+                    <p>Some content in menu 1.</p>
+                  </div>
+                  <div id="tab3" class="tab-pane fade in">
+                    <h3>Menu 2</h3>
+                    <p>Some content in menu 2.</p>
+                  </div>
+                </div>
+              </div>
+              <p class="imortant--note">
+                <span class="font-bold">Important Note:</span> This is a not-for-profit gratuitous initiative. Due to
+                the paucity of resources, the Developers and Volunteers are not able to verify all the information
+                uploaded here. Deal with the
+                suppliers, etc. with due care and at your own risk. The Developers and Volunteers shall not be held
+                responsible for any instances of cheating, etc.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+<script>
+
+
+var data = JSON.stringify({
+      "page": 1,
+      "size": 12,
+      "state": "",
+      "city": ""
+    });
+
+    var xhr = new XMLHttpRequest();
+    xhr.withCredentials = true;
+
+    xhr.addEventListener("readystatechange", function () {
+      if (this.readyState === 4) {
+        console.log(JSON.parse(this.responseText).data);
+        for (i = 0; i < JSON.parse(this.responseText).data.length; i++) {
+          $('#resource-list').append(`
+        <div class="col-12 col-md-3">
+                          <div class="boxvied--grid">
+                            <div class="headercovied">
+                              <h3 class="title--name--covid">${JSON.parse(this.responseText).data[i].name}</h3>
+                              <div class="bottom-verif"><span class="verified-txt">Available</span><span
+                                 
+                            </div>
+                            <div class="middle-bodycovid">
+                              <ul class="addInf--call">
+                                <li class="addres-item"><span>City:</span>${JSON.parse(this.responseText).data[i].state} | ${JSON.parse(this.responseText).data[i].city}</li>
+                                <li class="addres-item"><span>Phone:</span>${JSON.parse(this.responseText).data[i].phone}</li>
+                              </ul>
+                              <div class="moreInfo--items">
+                                <h6>More Details</h6>
+                                <p>${JSON.parse(this.responseText).data[i].description}</p>
+                              </div>
+                              <div class="availberqui-hos">
+                                <p><span></span></p>
+                              </div>
+                            </div>
+                            <div class="footer--covid">
+                              <div class="d-flex align-item-center">
+                                <span class="help-title">Helpful?</span>
+                                <div class="likecov--icon d-flex align-item-center">
+                                  <span class="like-icon"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></span>
+                                  <span class="like--txt">0</span>
+                                  <span class="like-icon dislike-flip"><i class="fa fa-thumbs-o-down"
+                                      aria-hidden="true"></i></span>
+                                  <span class="like--txt">0</span>
+                                </div>
+                              </div>
+                              <div class="sharebtn"><span><a href="#"><i class="fa fa-share-alt mr-2"
+                                      aria-hidden="true"></i>Share</a></span></div>
+                            </div>
+                          </div>
+                          </div>
+        `)
+        }
+       
+      }
+    });
+
+    xhr.open("POST", "https://tisanatech.com/api/resource");
+    xhr.setRequestHeader("Content-Type", "application/json");
+
+    xhr.send(data);
+  
+
+document.getElementById("stateId").onchange = function(){
+    var value = document.getElementById("stateId").value;
+    var data = JSON.stringify({
+      "state": value,
+    });
+    var xhr = new XMLHttpRequest();
+    xhr.withCredentials = true;
+    xhr.addEventListener("readystatechange", function () {
+      if (this.readyState === 4) {
+        var i;
+        var ddl = $("#selectCity");
+        ddl.empty();
+        ddl.append($("<option></option>").val('').html('Select city'));
+        for (i = 0; i < JSON.parse(this.responseText).data.length; i++) {
+          ddl.append($("<option></option>").val(JSON.parse(this.responseText).data[i]).html(JSON.parse(this.responseText).data[i]));
+        }
+      }
+    });
+
+    xhr.open("POST", "https://tisanatech.com/api/place/cities");
+    xhr.setRequestHeader("Content-Type", "application/json");
+    xhr.send(data)
+ };
+
+</script>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- jQuery Min JS -->
+  <script src="js/jquery.min.js"></script>
+  <!-- Popper Min JS -->
+  <script src="js/popper.min.js"></script>
+  <!-- Bootstrap Min JS -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Magnific Popup Min JS -->
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <!-- Appear Min JS -->
+  <script src="js/jquery.appear.min.js"></script>
+  <!-- Odometer Min JS -->
+  <script src="js/odometer.min.js"></script>
+  <!-- Owl Carousel Min JS -->
+  <script src="js/owl.carousel.min.js"></script>
+  <!-- MeanMenu JS -->
+  <script src="js/jquery.meanmenu.js"></script>
+  <!-- WOW Min JS -->
+  <script src="js/wow.min.js"></script>
+  <!-- Message Conversation JS -->
+  <script src="js/conversation.js"></script>
+  <!-- AjaxChimp Min JS -->
+  <script src="js/jquery.ajaxchimp.min.js"></script>
+  <!-- Form Validator Min JS -->
+  <script src="js/form-validator.min.js"></script>
+  <!-- Contact Form Min JS -->
+  <script src="js/contact-form-script.js"></script>
+  <!-- Particles Min JS -->
+  <script src="js/particles.min.js"></script>
+  <script src="js/coustom-particles.js"></script>
+  <!-- Main JS -->
+  <script src="js/main.js"></script>
+
+</html>
